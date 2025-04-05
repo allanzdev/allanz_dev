@@ -33,15 +33,20 @@ header{
     align-items: center;
     z-index: 100;
 }
-.logo{
+.logo {
     font-size: 3rem;
     color: #7a4bb7;
     font-weight: 800;
     cursor: pointer;
     transition: 0.5s ease;
+    background-color: rgba(15, 2, 26, 0.8); /* Fundo com transparência */
+    border: 2px solid rgba(15, 2, 26, 0.5); /* Borda com transparência */
+    padding: 0.5rem 1rem; /* Espaçamento interno */
+    border-radius: 8px; /* Bordas arredondadas */
 }
 .logo:hover{
     transform: scale(1.1);
+    
 }
 nav a{
     font-size: 1.8rem;
