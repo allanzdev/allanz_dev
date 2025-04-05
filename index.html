@@ -1,0 +1,133 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css">
+    <link rel="stylesheet" href="style.css">
+    <title>Portfolio Website</title>
+</head>
+
+<body>
+    <header>
+        <a href="#" class="logo">Allanz</a>
+        <nav>
+            <a href="#home"> Home</a>
+            <a href="#works">Other Works</a>
+            <a href="#skills">Skills</a>
+            <a href="#experience">Experience</a>
+            <a href="https://discord.com/channels/@me/1023010446703341638" target="_blank">Contact</a>
+        </nav>
+    </header>
+    <section id="home" class="home">
+        <div class="home-img">
+            <img src="imgs/main.png" alt="">
+        </div>
+        <div class="home-content">
+            <h1>Hi, It's <span>Allanz</span></h1>
+            <h3 class="typing-text">I'm a <span></span></h3>
+            <p>Hi! I'm Allan, I'm 18 years old and passionate about creating unique experiences in Minecraft Bedrock
+                Edition. Ever since I discovered the world of addon development in 2020, I've been diving deep into it,
+                honing my skills in creating addons, custom maps, and mash-ups.</p><br>
+            <p>Through dedication and continuous learning, I now collaborate with Marketplace teams, turning ideas into
+                creative and functional projects. My goal is always to innovate, bringing new mechanics, textures, and
+                adventures to players.</p>
+            <div class="social-icons">
+                <a href="https://www.linkedin.com/in/alan-feij%C3%B3-b58037302/"><i
+                        class="fa-brands fa-linkedin"></i></a>
+                <a href="https://github.com/allanzdev"><i class="fa-brands fa-github"></i></a>
+                <a href="https://x.com/AllanzOffDev"><i class="fa-brands fa-x-twitter"></i></a>
+            </div>
+            <a href="https://discord.com/channels/@me/1023010446703341638" class="btn" target="_blank">Hire me</a>
+        </div>
+    </section>
+    <section id="works" class="works">
+        <div class="works-content">
+            <h1>Teams I've Worked With</h1>
+            <div class="carousel">
+                <div class="carousel-container">
+                    <div class="carousel-item">
+                        <a href="https://www.ninjastudios.gg/" target="_blank"><img src="imgs/team1.png"
+                                alt="Team 1"></a>
+                    </div>
+                    <div class="carousel-item">
+                        <a href="http://pixellstudio.gg/" target="_blank"><img src="imgs/team2.png" alt="Team 2"></a>
+                    </div>
+                    <div class="carousel-item">
+                        <a href="https://tucanostudios.com/" target="_blank"><img src="imgs/team3.png" alt="Team 3"></a>
+                    </div>
+                </div>
+                <!-- <button class="carousel-prev">&#10094;</button>
+                <button class="carousel-next">&#10095;</button> -->
+            </div>
+        </div>
+    </section>
+    <section id="skills" class="skills">
+        <div class="skills-content">
+            <h2>Skills</h2>
+            <p>
+                I work as an addon developer for Minecraft Bedrock Edition, with experience in creating and implementing <strong>mobs</strong>, <strong>items</strong>, <strong>blocks</strong> and
+                <strong>gameplay mechanics</strong>.
+            </p>
+            <p>
+                I have a mastery of<strong>JavaScript</strong> and <strong>TypeScript</strong> applied to Minecraft development, as well as a solid knowledge of <strong>JSON</strong> for structuring data and configuring behavior in the game.
+            </p>
+            <p>
+                I also have experience with <strong>Python</strong>, focused on automating processes, facilitating workflows and increasing productivity in development.
+            </p>
+            <ul>
+                <li>✅ Development of addons for Minecraft Bedrock</li>
+                <li>✅ Implementation of customized gameplay (mobs, blocks, items)</li>
+                <li>✅ Programming in JavaScript and TypeScript</li>
+                <li>✅ Advanced structuring with JSON</li>
+                <li>✅ Automation with Python</li>
+            </ul>
+        </div>
+    </section>
+
+    <section id="experience" class="experience">
+        <div class="experience-content">
+            <h2>Experiences</h2>
+            <div class="project">
+                <div class="project-container">
+                    <div class="project-item">
+                        <a href="https://github.com/allanzdev/projeto1" target="_blank">
+                            <img src="imgs/project1.png" alt="Projeto 1">
+                            <p>Dungeons && Bosses</p>
+                        </a>
+                    </div>
+                    <div class="project-item">
+                        <a href="https://github.com/allanzdev/projeto2" target="_blank">
+                            <img src="imgs/project2.png" alt="Projeto 2">
+                            <p>Backpacks & Jetpacks</p>
+                        </a>
+                    </div>
+                    <div class="project-item">
+                        <a href="https://github.com/allanzdev/projeto3" target="_blank">
+                            <img src="imgs/project3.png" alt="Projeto 3">
+                            <p>Weapons & Armors</p>
+                        </a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+
+    <script>
+        const carouselContainerExperience = document.querySelector('.carousel-container-experience');
+        let currentIndex = 0;
+
+        function autoSlide() {
+            const items = document.querySelectorAll('.carousel-item-experience');
+            currentIndex = (currentIndex + 1) % items.length;
+            carouselContainerExperience.style.transform = `translateX(-${currentIndex * 100}%)`;
+        }
+
+        // Slide every 3 seconds
+        setInterval(autoSlide, 3000);
+    </script>
+</body>
+
+</html>
